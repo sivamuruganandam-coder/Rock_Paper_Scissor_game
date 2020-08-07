@@ -31,7 +31,7 @@ computerPoint = 0;
 tiePoint = 0;
 reset.onclick = function () {
     location.reload();
-}
+};
 
 
 // USER FUNCTION
@@ -43,13 +43,13 @@ rock1.addEventListener('click', function () {
     let computerChoice = arr[Math.floor(Math.random() * 3)];
     console.log(computerChoice);
     if (computerChoice === 'R') {
-        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }],{duration:1500});
+        rock2.animate([{ border: '5px solid black' }, { background-color: 'grey' }],{duration:1500});
     }
     else if (computerChoice === 'P') {
-        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        paper2.animate([{ border: '5px solid black' }, { background-color: 'grey' }], {duration:1500});
     }
     else {
-        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        scissor2.animate([{ border: '5px solid black' }, { background-color: 'grey' }], {duration:1500});
     }
 
 
@@ -76,14 +76,14 @@ paper1.addEventListener('click', function () {
     let computerChoice = arr[Math.floor(Math.random() * 3)];
     console.log(computerChoice);
     if (computerChoice === 'R') {
-        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        rock2.animate([{ border: '5px solid black' }, { background-color: 'grey' }], {duration:1500});
     }
 
     else if (computerChoice === 'P') {
-        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        paper2.animate([{ border: '5px solid black' }, { background-color: 'grey' }], {duration:1500});
     }
     else {
-        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        scissor2.animate([{ border: '5px solid black' }, { background-color: 'grey' }], {duration:1500});
     }
 
     if (((userChoice === "P") && (computerChoice === "P"))) {
@@ -109,14 +109,14 @@ scissor1.addEventListener('click', function () {
     let computerChoice = arr[Math.floor(Math.random() * 3)];
     console.log(computerChoice);
     if (computerChoice === 'R') {
-        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        rock2.animate([{ border: '5px solid black' }, { background-color: 'grey' }], {duration:1500});
     }
 
     else if (computerChoice === 'P') {
-        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        paper2.animate([{ border: '5px solid black' }, { background-color: 'grey' }], {duration:1500});
     }
     else {
-        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        scissor2.animate([{ border: '5px solid black' }, { background-color: 'blue' }], {duration:1500});
     }
 
 
