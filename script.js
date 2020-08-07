@@ -25,9 +25,9 @@ let sound = document.getElementById('audio');
 
 
 
-userPoint = 0;
-computerPoint = 0;
-tiePoint = 0;
+userPoint = "";
+computerPoint = "";
+tiePoint ="";
 
 
 
