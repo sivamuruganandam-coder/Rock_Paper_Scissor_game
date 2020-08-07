@@ -28,9 +28,7 @@ let sound = document.getElementById('audio');
 userPoint = 0;
 computerPoint = 0;
 tiePoint = 0;
-reset.onclick = function () {
-    location.reload();
-};
+
 
 
 // USER FUNCTION
@@ -133,6 +131,9 @@ scissor1.addEventListener('click', function () {
         computer.innerHTML = computerPoint;
     }
 });
+reset.onclick = function () {
+    location.reload();
+};
 
 
 
