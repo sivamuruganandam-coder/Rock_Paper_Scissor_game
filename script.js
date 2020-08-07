@@ -17,9 +17,9 @@ arr = ['R', 'P', 'S'];
 
 
 // POINTS
-let userPoint= document.getElementById('userscore').innerHTML;
-let computerPoint = document.getElementById('computerscore').innerHTML;
-let tiePoint = document.getElementById('tie').innerHTML;
+let userPoint= document.getElementById("userscore").innerHTML;
+let computerPoint = document.getElementById("computerscore").innerHTML;
+let tiePoint = document.getElementById("tie").innerHTML;
 // AUDIO
 let sound = document.getElementById('audio');
 
