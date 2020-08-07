@@ -15,12 +15,13 @@ let reset = document.getElementById('reset');
 //ARRAY
 arr = ['R', 'P', 'S'];
 
-// AUDIO
-let sound = document.getElementById('audio');
+
 // POINTS
 let userPoint= document.getElementById('userscore').innerHTML;
 let computerPoint = document.getElementById('computerscore').innerHTML;
 let tiePoint = document.getElementById('tie').innerHTML;
+// AUDIO
+let sound = document.getElementById('audio');
 
 
 
