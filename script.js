@@ -18,11 +18,11 @@ arr = ['R', 'P', 'S'];
 // AUDIO
 let sound = document.getElementById('audio');
 // POINTS
-let user = document.getElementById('userscore');
+let user1 = document.getElementById('userscore');
 let computer = document.getElementById('computerscore');
 let tie = document.getElementById('tie');
 
-let userPoint = user.innerHTML;
+let userPoint = user1.innerHTML;
 let computerPoint = computer.innerHTML;
 let tiePoint = tie.innerHTML;
 
