@@ -15,20 +15,23 @@ let reset = document.getElementById('reset');
 //ARRAY
 arr = ['R', 'P', 'S'];
 
-
-// POINTS
-let userPoint= document.getElementById("userscore").innerHTML;
-let computerPoint = document.getElementById("computerscore").innerHTML;
-let tiePoint = document.getElementById("tie").innerHTML;
 // AUDIO
 let sound = document.getElementById('audio');
+// POINTS
+let user = document.getElementById('userscore');
+let computer = document.getElementById('computerscore');
+let tie = document.getElementById('tie');
 
+let userPoint = user.innerHTML;
+let computerPoint = computer.innerHTML;
+let tiePoint = tie.innerHTML;
 
-
-userPoint = "";
-computerPoint = "";
-tiePoint ="";
-
+userPoint = 0;
+computerPoint = 0;
+tiePoint = 0;
+reset.onclick = function () {
+    location.reload();
+}
 
 
 // USER FUNCTION
@@ -40,13 +43,13 @@ rock1.addEventListener('click', function () {
     let computerChoice = arr[Math.floor(Math.random() * 3)];
     console.log(computerChoice);
     if (computerChoice === 'R') {
-        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }],{duration:1500});
+        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
     else if (computerChoice === 'P') {
-        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
     else {
-        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
 
 
@@ -73,14 +76,14 @@ paper1.addEventListener('click', function () {
     let computerChoice = arr[Math.floor(Math.random() * 3)];
     console.log(computerChoice);
     if (computerChoice === 'R') {
-        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
 
     else if (computerChoice === 'P') {
-        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
     else {
-        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
 
     if (((userChoice === "P") && (computerChoice === "P"))) {
@@ -106,14 +109,14 @@ scissor1.addEventListener('click', function () {
     let computerChoice = arr[Math.floor(Math.random() * 3)];
     console.log(computerChoice);
     if (computerChoice === 'R') {
-        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        rock2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
 
     else if (computerChoice === 'P') {
-        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        paper2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
     else {
-        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], {duration:1500});
+        scissor2.animate([{ border: '5px solid black' }, { background: 'grey' }], 1500);
     }
 
 
@@ -131,9 +134,6 @@ scissor1.addEventListener('click', function () {
         computer.innerHTML = computerPoint;
     }
 });
-reset.onclick = function () {
-    location.reload();
-};
 
 
 
